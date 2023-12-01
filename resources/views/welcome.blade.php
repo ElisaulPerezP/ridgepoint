@@ -97,12 +97,12 @@
         </div>
 
         <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+            <div class="carousel-item active" style="background-image: url('{{ asset('storage/img/hero-carousel/hero-carousel-1.jpg') }}');"></div>
+            <div class="carousel-item" style="background-image: url('{{ asset('storage/img/hero-carousel/hero-carousel-2.jpg') }}');"></div>
+            <div class="carousel-item" style="background-image: url('{{ asset('storage/img/hero-carousel/hero-carousel-3.jpg') }}');"></div>
+            <div class="carousel-item" style="background-image: url('{{ asset('storage/img/hero-carousel/hero-carousel-4.jpg') }}');"></div>
+            <div class="carousel-item" style="background-image: url('{{ asset('storage/img/hero-carousel/hero-carousel-5.jpg') }}');"></div>
 
-            <div class="carousel-item active" style="background-image: {{asset('img/hero-carousel/hero-carousel-1.jpg') }}"></div>
-            <div class="carousel-item active" style="background-image: {{asset('img/hero-carousel/hero-carousel-2.jpg') }}"></div>
-            <div class="carousel-item active" style="background-image: {{asset('img/hero-carousel/hero-carousel-3.jpg') }}"></div>
-            <div class="carousel-item active" style="background-image: {{asset('img/hero-carousel/hero-carousel-4.jpg') }}"></div>
-            <div class="carousel-item active" style="background-image: {{asset('img/hero-carousel/hero-carousel-5.jpg') }}"></div>
 
 
             <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
@@ -187,7 +187,7 @@
                         <div class="card-item">
                             <div class="row">
                                 <div class="col-xl-5">
-                                    <div class="card-bg" style="background-image: url(assets/img/constructions-1.jpg);"></div>
+                                    <div class="card-bg" style="background-image: url('{{ asset('storage/img/constructions-1.jpg')}}') ;"></div>
                                 </div>
                                 <div class="col-xl-7 d-flex align-items-center">
                                     <div class="card-body">
@@ -203,7 +203,7 @@
                         <div class="card-item">
                             <div class="row">
                                 <div class="col-xl-5">
-                                    <div class="card-bg" style="background-image: url(assets/img/constructions-2.jpg);"></div>
+                                    <div class="card-bg" style="background-image: url('{{ asset('storage/img/constructions-2.jpg')}}');"></div>
                                 </div>
                                 <div class="col-xl-7 d-flex align-items-center">
                                     <div class="card-body">
@@ -219,7 +219,7 @@
                         <div class="card-item">
                             <div class="row">
                                 <div class="col-xl-5">
-                                    <div class="card-bg" style="background-image: url(assets/img/constructions-3.jpg);"></div>
+                                    <div class="card-bg" style="background-image: url('{{ asset('storage/img/constructions-3.jpg')}}');"></div>
                                 </div>
                                 <div class="col-xl-7 d-flex align-items-center">
                                     <div class="card-body">
@@ -235,7 +235,7 @@
                         <div class="card-item">
                             <div class="row">
                                 <div class="col-xl-5">
-                                    <div class="card-bg" style="background-image: url(assets/img/constructions-4.jpg);"></div>
+                                    <div class="card-bg" style="background-image: url('{{ asset('storage/img/constructions-4.jpg')}}');"></div>
                                 </div>
                                 <div class="col-xl-7 d-flex align-items-center">
                                     <div class="card-body">
@@ -339,7 +339,7 @@
             <div class="container" data-aos="fade-up">
 
                 <div class="row justify-content-around gy-4">
-                    <div class="col-lg-6 img-bg" style="background-image: url(assets/img/alt-services.jpg);" data-aos="zoom-in" data-aos-delay="100"></div>
+                    <div class="col-lg-6 img-bg" style="background-image: url('{{ asset('assets/img/alt-services.jpg')}}');" data-aos="zoom-in" data-aos-delay="100"></div>
 
                     <div class="col-lg-5 d-flex flex-column justify-content-center">
                         <h3>Enim quis est voluptatibus aliquid consequatur fugiat</h3>
