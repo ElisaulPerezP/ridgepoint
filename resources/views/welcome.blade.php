@@ -48,7 +48,10 @@
             <!-- <img src="assets/img/logo.png" alt=""> -->
             <h1>RidgePoint Construction<span>.</span></h1>
         </a>
-        <nav class="navbar">
+
+        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+        <nav id="navbar" class="navbar">
             <ul>
                 <li><a href="index.html" class="active">Dashboard</a></li>
                 <li><a href="about.html">About</a></li>
@@ -93,10 +96,7 @@
                 </li>
             </ul>
         </nav><!-- .navbar -->
-<div>
-    <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-    <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-</div>
+
     </div>
 </header><!-- End Header -->
 
@@ -941,7 +941,8 @@
 
     <!-- ======= Recent Blog Posts Section ======= -->
     <section id="recent-blog-posts" class="recent-blog-posts">
-        <div class="container" data-aos="fade-up">
+        <div class="container" data-aos="fade-up"
+        ">
 
 
         <div class=" section-header">
