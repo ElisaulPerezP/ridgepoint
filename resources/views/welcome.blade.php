@@ -44,13 +44,8 @@
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
         <a href="index.html" class="logo d-flex align-items-center">
-            <!-- Uncomment the line below if you also wish to use an image logo -->
-            <!-- <img src="assets/img/logo.png" alt=""> -->
             <h1>RidgePoint Construction<span>.</span></h1>
         </a>
-
-        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
         <nav id="navbar" class="navbar">
             <ul>
                 <li><a href="index.html" class="active">Dashboard</a></li>
@@ -85,18 +80,22 @@
                             <li><a href="register">Singin</a></li>
                         @endguest
                         @auth
-                                <li><a href="profile">Profile</a></li>
-                                <li>    <a href="#" onclick="document.getElementById('logout-form').submit();">Log Out</a>
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                        @csrf
-                                    </form>
-                                </li>
+                            <li><a href="profile">Profile</a></li>
+                            <li><a href="#" onclick="document.getElementById('logout-form').submit();">Log Out</a>
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                      style="display: none;">
+                                    @csrf
+                                </form>
+                            </li>
                         @endauth
                     </ul>
                 </li>
             </ul>
         </nav><!-- .navbar -->
-
+        <div>
+            <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+            <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+        </div>
     </div>
 </header><!-- End Header -->
 
